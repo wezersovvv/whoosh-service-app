@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="180dp"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    android:background="@color/utdorange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight=".25"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/nav_screen_backButton"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:backgroundTint="@color/darkorange" />
+
+        <Button
+            android:id="@+id/nav_screen_walkButton"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="31dp"
+            android:layout_height="40dp"
+            android:background="@drawable/walking" />
+
+        <Button
+            android:id="@+id/nav_screen_disButton"
+            android:layout_gravity="center_vertical"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/ic_launcher"
+            android:backgroundTint="#fcfff6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight=".75"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/start"
+               />
+
+            <EditText
+                android:id="@+id/nav_fieldStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="Start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:background="@drawable/finish" />
+
+            <EditText
+                android:id="@+id/nav_fieldEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="#ffffff"
+                android:hint="Destination"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
